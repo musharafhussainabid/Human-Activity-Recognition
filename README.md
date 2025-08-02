@@ -1,4 +1,4 @@
-\# Human Activity Recognition Using MPU6050 Sensor Data
+# Human Activity Recognition Using MPU6050 Sensor Data
 
 
 
@@ -6,47 +6,43 @@ This project implements a human activity recognition (HAR) system using data col
 
 
 
-\## Overview
+## Overview
 
 
 
-\- Preprocesses raw sensor data including label encoding and normalization.
+- Preprocesses raw sensor data including label encoding and normalization.
 
-\- Trains a supervised machine learning model using the Random Forest algorithm.
+- Trains a supervised machine learning model using the Random Forest algorithm.
 
-\- Evaluates model performance on a held-out test set.
+- Evaluates model performance on a held-out test set.
 
-\- Supports real-time activity prediction based on new sensor input.
+- Supports real-time activity prediction based on new sensor input.
 
 
 
-\## Dataset
+## Dataset
 
 
 
 The dataset should be in CSV format (`mpu6050\_dataset.csv`) and contain the following columns:
 
-\- Features: `ax`, `ay`, `az`, `gx`, `gy`, `gz`
+- Features: `ax`, `ay`, `az`, `gx`, `gy`, `gz`
 
-\- Target: `label` (categorical activity name)
-
-
-
-\## Installation and Usage
+- Target: `label` (categorical activity name)
 
 
 
-1\. Clone the repository:
+## Installation and Usage
 
 
 
-&nbsp;  ```bash
+1. Clone the repository:
 
-&nbsp;  git clone https://github.com/yourusername/har-mpu6050.git
+git clone https://github.com/musharafhussainabid/har-mpu6050.git
 
-&nbsp;  cd har-mpu6050
+cd har-mpu6050
 
-Ensure that the dataset file mpu6050\_dataset.csv is placed in the root directory.
+Ensure that the dataset file mpu6050_dataset.csv is placed in the root directory.
 
 
 
@@ -54,11 +50,6 @@ Install required Python packages:
 
 
 
-bash
-
-Copy
-
-Edit
 
 pip install -r requirements.txt
 
@@ -66,35 +57,23 @@ Run the activity recognition script:
 
 
 
-bash
 
-Copy
-
-Edit
 
 python activity\_recognition.py
 
 Input Example
 
-python
 
-Copy
 
-Edit
+test_data = np.array([
 
-test\_data = np.array(\[
-
-&nbsp;   \[-0.163107, -0.092484, 10.443980, 2.824668, 1.910485, -4.037339]
+[-0.163107, -0.092484, 10.443980, 2.824668, 1.910485, -4.037339]
 
 ])
 
 Output Example
 
-yaml
 
-Copy
-
-Edit
 
 Accuracy: 0.95
 
@@ -124,17 +103,13 @@ scikit-learn (Random Forest Classifier, preprocessing, metrics)
 
 File Structure
 
-bash
 
-Copy
-
-Edit
 
 har-mpu6050/
 
 │
 
-├── activity\_recognition.py     # Main implementation script
+├── activity_recognition.ipynb     
 
 ├── requirements.txt            # Python dependencies
 
@@ -151,4 +126,5 @@ Credits
 MPU6050 sensor dataset
 
 scikit-learn library
+
 
